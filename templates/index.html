@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Song Suggester</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>Find Your Perfect Song!</h1>
+  <form action="/" method="post">
+    <label for="age">Select Your Age Group:</label>
+    <select id="age" name="age" required>
+      <option value="1">0-20 (2015 till now)</option>
+      <option value="2">21-50 (2000-2015)</option>
+      <option value="3">50+ (Before 2000)</option>
+    </select>
+
+    <label for="mood">Choose Your Mood:</label>
+    <select id="mood" name="mood" required>
+      <option value="Sad">Sad</option>
+      <option value="Romantic">Romantic</option>
+      <option value="Joyful">Joyful</option>
+      <option value="Study">Study</option>
+      <option value="Fitness Freak">Fitness Freak</option>
+    </select>
+
+    <label for="activity">What Are You Doing?</label>
+    <select id="activity" name="activity" required>
+      <option value="Relaxing">Relaxing</option>
+      <option value="Cooking">Cooking</option>
+      <option value="Gym">Gym</option>
+      <option value="Study">Study</option>
+      <option value="Meditation">Meditation</option>
+      <option value="Party">Party</option>
+    </select>
+
+    <label for="time">Time of Day:</label>
+    <select id="time" name="time" required>
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+      <option value="Evening">Evening</option>
+      <option value="Night">Night</option>
+    </select>
+
+    <label for="weather">Current Weather:</label>
+    <select id="weather" name="weather" required>
+      <option value="Rainy">Rainy</option>
+      <option value="Sunny">Sunny</option>
+      <option value="Cold">Cold</option>
+    </select>
+
+    <button type="submit">Get Song Suggestions</button>
+  </form>
+</body>
+</html>
