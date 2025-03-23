@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Song Suggestions</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>Your Song Suggestions</h1>
+  {% if suggestions %}
+    <ul>
+      {% for song, score in suggestions %}
+        <li>{{ song }} - Score: {{ score }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No matching songs found. Try again with different inputs!</p>
+  {% endif %}
+
+  <a href="/">Back to Search</a>
+</body>
+</html>
